@@ -1,0 +1,48 @@
+.hero {
+  padding-top: 2rem;
+}
+
+.hero-image {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.hero-image img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.hero h3, h5 {
+  margin: 0;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+  }
+  .hero-description {
+    max-inline-size: 450px;
+    order: 1;
+  }
+  .hero-image {
+    flex: 1;
+    order: 2;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-image img {
+    block-size: 504px;
+    inline-size: 500px;
+  }
+  .hero-description a.button {
+    display: none;
+  }
+}

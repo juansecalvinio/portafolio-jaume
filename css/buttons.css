@@ -1,0 +1,21 @@
+.button {
+  background: var(--primary-purple);
+  border: 3px solid var(--primary-purple);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--white);
+  font: var(--fontButton);
+  padding: 1.3rem 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:active {
+  transform: scale(0.99);
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--primary-purple);
+}
