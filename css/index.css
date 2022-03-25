@@ -1,26 +1,67 @@
+@import "./buttons.css";
+@import "./buttons-icon.css";
+@import "./comment.css";
+@import "./footer.css";
+@import "./form.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./menu.css";
+@import "./reviews.css";
+@import "./social.css";
+@import "./project.css";
+@import "./wrapper.css";
 
-:root { 
-  --primary: #310a90; 
-  --gradient: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%); 
-  --white: #ffffff; 
-  --gradient: linear-gradient(45deg, #72edf2 0%, #5151e5 100%); 
-  --headline1: 700 5.9375rem/9.6068754196167rem Poppins; 
-  --headline2: 700 3.6875rem/5.96637487411499rem Poppins; 
-  --headline3: 700 3rem/4.854000091552734rem Poppins; 
-  --headline4: 700 2.125rem/3.4382500648498535rem Poppins; 
-  --headline5: 700 1.5rem/2.427000045776367rem Poppins; 
-  --body1: 400 1rem/1.6180000305175781rem Poppins; 
-  --body2: 400 0.875rem/1.4157500267028809rem Poppins; 
-  --button: 700 0.875rem/1.4157500267028809rem Poppins; 
-  --caption: 400 0.75rem/1.2135000228881836rem Poppins; 
-  
+:root {
+  --baseFont: 'Poppins', sans-serif;
+  --fontHeadline1: 700 9.5rem/15.4rem var(--baseFont);
+  --fontHeadline2: 700 5.9rem/9.5rem var(--baseFont);
+  --fontHeadline3: 700 4.8rem/7.7rem var(--baseFont);
+  --fontHeadline4: 700 3.4rem/5.5rem var(--baseFont);
+  --fontHeadline5: 700 2.4rem/3.8rem var(--baseFont);
+  --fontBody1: 400 1.6rem/2.6rem var(--baseFont);
+  --fontBody2: 400 1.4rem/2.3rem var(--baseFont);
+  --fontButton: 700 1.4rem/2.3rem var(--baseFont);
+  --fontCaption: 400 1.2rem/1.9rem var(--baseFont);
+  --primary-purple: #310A90;
+  --primary-green: #42E2B8;
+  --gradient-blue: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+  --gradient-orange: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+  --white: #FFFFFF;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  color: var(--white);
-  background-color: var(--primary);
-  font: var(--headline2);
+  margin: 0;
+  padding: 0;
+  background: var(--gradient-blue);
+  color: var(--primary-purple);
+  font: var(--fontBody1);
+  min-block-size: 100vh;
 }
 
+h1 {
+  font: var(--fontHeadline1);
+}
 
+h2 {
+  font: var(--fontHeadline2);
+}
 
+h3 {
+  font: var(--fontHeadline3);
+}
+
+h4 {
+  font: var(--fontHeadline4);
+}
+
+h5 {
+  font: var(--fontHeadline5);
+}
+
+p {
+  font: var(--fontBody1);
+}

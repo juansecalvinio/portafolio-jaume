@@ -1,0 +1,30 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.comment h3, 
+.comment h5 {
+  text-align: center;
+}
+
+.comment h3 {
+  font: 400 2.4rem/3.883rem 'Poppins', sans-serif;
+}
+
+.comment img {
+  margin-top: 2.4rem;
+  width: 8.052rem;
+}
+
+@media screen and (min-width: 768px) {
+  .comment {
+    padding: 15rem; 
+  }
+  .comment h3 {
+    font: 300 3.4rem/5.501rem 'Oxygen', sans-serif;
+  }
+}
