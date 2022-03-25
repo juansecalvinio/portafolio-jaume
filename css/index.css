@@ -2,12 +2,13 @@
 @import "./buttons-icon.css";
 @import "./comment.css";
 @import "./footer.css";
+@import "./form.css";
 @import "./header.css";
 @import "./hero.css";
 @import "./menu.css";
 @import "./reviews.css";
 @import "./social.css";
-@import "./testimony.css";
+@import "./project.css";
 @import "./wrapper.css";
 
 :root {

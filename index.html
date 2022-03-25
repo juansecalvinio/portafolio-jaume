@@ -11,25 +11,31 @@
   <title>Portafolio</title>
 </head>
 <body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-content">
+        <img src="./images/logo.png" width="70" height="20" alt="logo" />
+        <nav class="menu" aria-label="main-navigation">
+          <ul>
+            <li>
+              <a class="is-active" href="#main">Hola</a>
+            </li>
+            <li>
+              <a href="#projects">Proyectos</a>
+            </li>
+            <li>
+              <a href="#contact">Hablemos</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button">Curriculum</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- WRAPPER -->
   <main class="wrapper">
-    <!-- HEADER -->
-    <header class="header">  
-      <img src="./images/logo.png" width="70" height="20" alt="logo" />
-      <nav class="menu" aria-label="main-navigation">
-        <ul>
-          <li>
-            <a class="is-active" href="#main">Hola</a>
-          </li>
-          <li>
-            <a href="#projects">Proyectos</a>
-          </li>
-          <li>
-            <a href="#contact">Hablemos</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="button">Curriculum</button>
-    </header>
   
     <!-- HERO -->
     <section aria-label="main" class="hero" id="main">
@@ -59,16 +65,18 @@
     </section>
 
     <!-- LEONIDASESTEBAN.COM -->
-    <section class="testimony">
-      <div class="testimony-image right">
+    <section class="project" id="projects">
+      <div class="project-image right">
         <img src="./images/img.png" alt="leonidas-esteban">
       </div>
-      <div class="testimony-description">
-        <a class="testimony-title" href="https://leonidasesteban.com" target="_blank">leonidasesteban.com</a>
+      <div class="project-description">
+        <a class="project-title" href="https://leonidasesteban.com" target="_blank">leonidasesteban.com</a>
         <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
 tus habilidades como desarrollador Front-End.</p>
-        <a href="#" class="button secondary" target="_blank">Ver Código</a>
-        <a href="#" class="button" target="_blank">Ver Proyecto</a>
+        <div class="project-actions">
+          <a href="#" class="button" target="_blank">Ver Proyecto</a>
+          <a href="#" class="button secondary" target="_blank">Ver Código</a>
+        </div>
       </div>
     </section>
 
@@ -87,15 +95,17 @@ tus habilidades como desarrollador Front-End.</p>
     </section>
 
     <!-- MARVOL -->
-    <section class="testimony">
-      <div class="testimony-image left">
+    <section class="project">
+      <div class="project-image left">
         <img src="./images/ipad.png" alt="marvol">
       </div>
-      <div class="testimony-description">
-        <a class="testimony-title" href="#" target="_blank">MARVOL</a>
+      <div class="project-description">
+        <a class="project-title" href="#" target="_blank">MARVOL</a>
         <p>Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.</p>
-        <a href="#" class="button secondary" target="_blank">Ver Código</a>
+      <div class="project-actions">
         <a href="#" class="button" target="_blank">Ver Proyecto</a>
+        <a href="#" class="button secondary" target="_blank">Ver Código</a>
+      </div>
       </div>
     </section>
 
@@ -114,16 +124,18 @@ tus habilidades como desarrollador Front-End.</p>
     </section>
 
     <!-- NETNET -->
-    <section class="testimony">
-      <div class="testimony-image right">
+    <section class="project">
+      <div class="project-image right">
         <img src="./images/iphone-x.png" alt="leonidas-esteban">
       </div>
-      <div class="testimony-description">
-        <a class="testimony-title" href="#" target="_blank">NETNET</a>
+      <div class="project-description">
+        <a class="project-title" href="#" target="_blank">NETNET</a>
         <p>Películas y series ilimitadas y mucho más.
           Disfruta donde quieras. Cancela cuando quieras.</p>
-        <a href="#" class="button secondary" target="_blank">Ver Código</a>
-        <a href="#" class="button" target="_blank">Ver Proyecto</a>
+        <div class="project-actions">
+          <a href="#" class="button" target="_blank">Ver Proyecto</a>
+          <a href="#" class="button secondary" target="_blank">Ver Código</a>
+        </div>
       </div>
     </section>
 
@@ -140,6 +152,25 @@ tus habilidades como desarrollador Front-End.</p>
         </span>
       </div>
     </section>
+
+    <form class="form" method="POST" id="contact">
+      <a class="project-title" href="#" target="_blank">HABLEMOS</a>
+      <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
+        no dude en ponerse en contacto conmigo.</p>
+      <div class="form-control">
+        <label for="form-name">Nombre completo</label>
+        <input name="name" id="form-name" type="text" placeholder="Juan" required>
+      </div> 
+      <div class="form-control">
+        <label for="form-email">Correo electrónico</label>
+        <input name="email" id="form-email" type="email" placeholder="juan@mail.com" required>
+      </div>
+      <div class="form-control">
+        <label for="form-message">Mensaje</label>
+        <textarea name="message" id="form-message" type="text" placeholder="Mensaje" rows="7" required></textarea>
+      </div>
+      <button class="button">Enviar mensaje</button>
+    </form>
 
     <footer class="footer">
       <img class="logo" src="./images/logo-white.png" width="70" height="20" alt="logo" />

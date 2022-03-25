@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  max-inline-size: 100%;
+  block-size: auto;
+  text-align: center;
+}
+
+.form p {
+  color: var(--white);
+  font: var(--fontBody1);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font: var(--fontButton);
+  text-align: start;
+  padding-left: 1.6rem;
+}
+
+.form input, 
+.form textarea {
+  border: 2px solid #858C94;
+  border-radius: 8px;
+  font: var(--fontBody1);
+  padding: 1.2rem 1.6rem;
+  margin-top: 0.8rem; 
+}
+
+.form .project-title {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding: 8rem 30rem;
+  }
+
+  .form .project-title {
+    padding: 0;
+  }
+}

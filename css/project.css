@@ -1,31 +1,30 @@
-.testimony {
+.project {
   padding: 4rem 0;
 }
 
-.testimony-image {
-  padding-bottom: 4rem;
+.project-image {
   text-align: center;
 }
 
-.testimony-image.right {
+.project-image.right {
   padding-left: 0;
 }
 
-.testimony-image.left {
+.project-image.left {
   padding-right: 0;
 }
 
-.testimony-image img {
+.project-image img {
   max-inline-size: 100%;
 }
 
-.testimony-description {
+.project-description {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
 
-.testimony-title {
+.project-title {
   align-self: flex-start;
   background: var(--primary-purple);
   box-shadow: -4px 4px 0 var(--white);
@@ -35,22 +34,42 @@
   text-decoration: none;
 }
 
+.project-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.project-actions a {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
-  .testimony {
+  .project {
     display: flex;
     align-items: center;
+    gap: 3.2rem;
     padding: 8rem 0;
   }
-  .testimony-description {
+  .project-description {
     flex: 1;
+    margin: 2.4rem;
+    padding: 1rem;
   }
-  .testimony-image.left {
+  .project-image.left {
+    flex: 2;
     padding-right: 4rem;
   }
-  .testimony-image.right {
-    flex: 1;
+  .project-image.right {
+    flex: 2;
     order: 2;
     padding-left: 4rem;
     text-align: center;
+    vertical-align: baseline;
+  }
+  .project-actions {
+    display: block;
   }
 }
